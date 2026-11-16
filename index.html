@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beaufort Table</title>
+  <style>
+    html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+    canvas { display: block; margin: 0 auto; }
+    #credits {
+      position: fixed; left: 0; right: 0; bottom: 0;
+      padding: 6px 14px 8px;
+      box-sizing: border-box;
+      text-align: center;
+      font: 11px/1.45 Georgia, serif;
+      color: rgba(255, 255, 255, 0.6);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+    }
+    #credits a { color: inherit; text-decoration: underline; }
+    #credits a:hover { color: #fff; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body>
+  <div id="credits">
+    Beafort scale images and descriptions:
+    <a href="https://en.wikipedia.org/wiki/Beaufort_scale" target="_blank" rel="noopener">Beaufort scale, Wikipedia</a>
+    &middot; Weather data:
+    <a href="https://openweathermap.org" target="_blank" rel="noopener">OpenWeather</a><span id="book-credit">
+    &middot; Recipe text from <em>The Beaufort Scale Cookbook: All Weather Boat Cuisine</em> by June Raper (Fernhurst Books)</span>
+  </div>
+</body>
+</html>
